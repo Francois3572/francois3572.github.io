@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{%- comment -%}
+  Document légal. `counterpart` et `counterpart_lang` sont posés par
+  scripts/export-legal.py : chaque page connaît sa contrepartie dans l'autre
+  langue, sans table à maintenir ici.
+{%- endcomment -%}
+<nav class="langues">
+  {%- if page.counterpart -%}
+    <a href="{{ page.counterpart | relative_url }}" hreflang="{{ page.counterpart_lang }}">
+      {%- if page.counterpart_lang == 'en' -%}English{%- else -%}Français{%- endif -%}
+    </a>
+  {%- endif -%}
+</nav>
+<h1>{{ page.title }}</h1>
+{{ content }}

@@ -1,0 +1,18 @@
+# Site des pages publiques des apps — François LAMBERT.
+#
+# Pas de thème : le rendu tient dans _layouts/ et assets/style.css. Un thème
+# imposerait sa mise en page et une dépendance à suivre, pour des documents
+# juridiques qui n'ont besoin que d'être lisibles.
+title: François LAMBERT — apps
+description: Documents légaux des applications publiées.
+lang: fr
+
+# Les pages légales sont GÉNÉRÉES depuis le dépôt DiceRollCalculator
+# (scripts/export-legal.py). Ne pas les éditer ici : la modification serait
+# écrasée au prochain export, et le texte de référence est là-bas.
+exclude:
+  - README.md
+
+# Permaliens explicites dans chaque page (front matter), jamais déduits du nom
+# de fichier : ces URLs partent dans les fiches store et dans AdMob.
+permalink: pretty
