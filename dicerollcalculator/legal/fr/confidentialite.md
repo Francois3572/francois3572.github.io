@@ -6,7 +6,7 @@ permalink: /dicerollcalculator/legal/fr/confidentialite
 counterpart: /dicerollcalculator/legal/en/privacy-policy
 counterpart_lang: en
 ---
-_Dernière mise à jour : 2026-10-08_
+_Dernière mise à jour : 2026-10-18_
 
 > Version française, **seule faisant foi**. Une [traduction anglaise de courtoisie](/dicerollcalculator/legal/en/privacy-policy) est disponible.
 
@@ -23,7 +23,7 @@ François LAMBERT — voir [mentions légales](/dicerollcalculator/legal/fr/ment
 | Reçu d'achat (App Store ou Google Play selon la plateforme) — **version payante uniquement** | Validation de l'achat « retirer les pubs » | Exécution du contrat (achat) |
 | Données techniques de diagnostic en cas de plantage — **toutes les versions, les trois plateformes** | Corriger les défauts de l'app (§4) | Intérêt légitime : assurer la fiabilité de l'app |
 
-La version payante (ou la version gratuite après achat « retirer les pubs ») n'affiche **aucune publicité** et ne transmet **aucun identifiant publicitaire**. Les rapports d'incident décrits au §4 s'appliquent en revanche à elle comme aux autres : corriger un plantage ne dépend pas de la façon dont l'app est financée.
+La version payante (ou la version gratuite après achat « retirer les pubs ») n'affiche **aucune publicité**. Dès qu'elle sait l'achat acquis, l'app ne démarre plus le SDK de Google : ni formulaire de consentement, ni demande d'autorisation de suivi, ni transmission d'identifiant publicitaire. Deux limites tiennent au fonctionnement du SDK : pendant la session où vous achetez, le SDK déjà démarré le reste jusqu'à la fermeture de l'app ; après une réinstallation ou sur un nouvel appareil, il peut démarrer une fois, le temps que la boutique confirme l'achat. Les rapports d'incident décrits au §4 s'appliquent en revanche à elle comme aux autres : corriger un plantage ne dépend pas de la façon dont l'app est financée.
 
 **Le widget d'écran d'accueil lit ces mêmes données, sur l'appareil.** Sur iOS et macOS, les jets enregistrés et le dernier lancer sont recopiés dans un conteneur partagé entre l'app et son extension (« App Group ») : c'est le seul moyen pour une extension de lire les données de son application. Sur Android, le widget ouvre directement la base locale de l'app. Dans les deux cas rien ne quitte l'appareil — étant entendu qu'un nom de jet que vous choisissez peut alors s'afficher sur votre écran d'accueil.
 
@@ -32,6 +32,8 @@ La version payante (ou la version gratuite après achat « retirer les pubs ») 
 ## 3. Publicités et partenaires tiers
 
 Sur **iOS et Android**, la version gratuite affiche des publicités via **Google AdMob** (Google Ireland Limited). AdMob peut recevoir l'identifiant publicitaire de l'appareil pour proposer des annonces personnalisées, sous réserve du consentement recueilli via le SDK Google UMP (User Messaging Platform), complété sur iOS par l'autorisation App Tracking Transparency. Les publicités ne sont chargées qu'**après** réponse au formulaire de consentement.
+
+Pour diffuser et mesurer les annonces et prévenir la fraude, le SDK de Google transmet aussi, y compris pour des annonces non personnalisées, l'**adresse IP** de l'appareil (dont Google peut déduire une **position approximative** — jamais la position précise), les **interactions** (lancement de l'app, appuis, vues de vidéos) et des **informations de diagnostic** sur le fonctionnement de l'app et du SDK. Google les traite selon sa propre politique, ci-dessous. La version macOS, qui n'intègre pas AdMob, n'en transmet aucune.
 
 - Politique de confidentialité Google AdMob : https://policies.google.com/technologies/ads
 

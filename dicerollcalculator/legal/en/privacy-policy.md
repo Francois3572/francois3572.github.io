@@ -6,7 +6,7 @@ permalink: /dicerollcalculator/legal/en/privacy-policy
 counterpart: /dicerollcalculator/legal/fr/confidentialite
 counterpart_lang: fr
 ---
-_Last updated: 2026-10-08_
+_Last updated: 2026-10-18_
 
 > Courtesy translation — only the [French version](/dicerollcalculator/legal/fr/confidentialite) is authoritative.
 
@@ -23,7 +23,7 @@ François LAMBERT — see the [legal notice](/dicerollcalculator/legal/en/legal-
 | Purchase receipt (App Store or Google Play, depending on the platform) — **paid version only** | Validating the "remove ads" purchase | Performance of a contract (the purchase) |
 | Technical diagnostic data when the app crashes — **all versions, all three platforms** | Fixing defects in the app (§4) | Legitimate interest: keeping the app reliable |
 
-The paid version — or the free version once "remove ads" has been purchased — displays **no advertising** and transmits **no advertising identifier**. The crash reports described in §4 do apply to it like to any other version: fixing a crash does not depend on how the app is funded.
+The paid version — or the free version once "remove ads" has been purchased — displays **no advertising**. Once it knows the purchase has been made, the app no longer starts the Google SDK: no consent form, no tracking authorisation request, no advertising identifier transmitted. Two limits come from the way the SDK works: during the session in which you make the purchase, the SDK that has already started keeps running until the app is closed; after a reinstall or on a new device, it may start once, until the store confirms the purchase. The crash reports described in §4 do apply to it like to any other version: fixing a crash does not depend on how the app is funded.
 
 **The home screen widget reads the same data, on the device.** On iOS and macOS, saved rolls and the last roll are copied into a container shared between the app and its extension (an "App Group"): that is the only way an extension can read its application's data. On Android, the widget opens the app's local database directly. In both cases nothing leaves the device — with the understanding that a roll name you choose may then be displayed on your home screen.
 
@@ -32,6 +32,8 @@ The paid version — or the free version once "remove ads" has been purchased �
 ## 3. Advertising and third parties
 
 On **iOS and Android**, the free version displays advertising through **Google AdMob** (Google Ireland Limited). AdMob may receive the device's advertising identifier in order to serve personalised ads, subject to the consent collected through the Google UMP (User Messaging Platform) SDK, supplemented on iOS by the App Tracking Transparency authorisation. Advertising is loaded only **after** the consent form has been answered.
+
+To serve and measure ads and to prevent fraud, Google's SDK also transmits, including for non-personalised ads, the device's **IP address** (from which Google may infer an **approximate location** — never the precise location), **interactions** (app launch, taps, video views) and **diagnostic information** about how the app and the SDK run. Google processes this data under its own policy, below. The macOS version, which does not include AdMob, transmits none of it.
 
 - Google AdMob privacy policy: https://policies.google.com/technologies/ads
 

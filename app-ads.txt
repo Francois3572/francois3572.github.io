@@ -1,0 +1,3 @@
+# app-ads.txt — vendeurs autorisés à vendre les espaces publicitaires des apps de ce développeur (IAB).
+# Maintenu par le plugin ClaudeTools legal-pages (identifiants d'éditeur AdMob des apps).
+google.com, pub-4472488163656893, DIRECT, f08c47fec0942fa0
