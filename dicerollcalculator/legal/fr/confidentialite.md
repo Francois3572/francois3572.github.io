@@ -67,7 +67,11 @@ Ce mécanisme est propre à iOS : Android n'a pas d'équivalent obligatoire (seu
 
 ## 8. Sécurité
 
-Aucune donnée n'est transmise à un serveur propre à l'app : il n'y a pas de backend. Les seules données quittant l'appareil le font via deux SDK tiers, chacun selon sa propre politique de confidentialité : **Google Mobile Ads** (version gratuite, iOS et Android uniquement — §3) et **Sentry** (toutes les versions, les trois plateformes — §4).
+Aucune donnée n'est transmise à un serveur propre à l'app : il n'y a pas de backend. Les seules données quittant l'appareil le font via trois bibliothèques tierces, chacune selon la politique de confidentialité de son éditeur :
+
+- **Google Mobile Ads** (version gratuite, iOS et Android uniquement — §3) ;
+- **Sentry** (toutes les versions, les trois plateformes — §4) ;
+- **la bibliothèque Google Play Billing** (Android uniquement, toutes les versions), qui gère les achats intégrés. Qu'un achat ait lieu ou non, elle envoie à Google, après le lancement de l'app, des journaux sur son propre fonctionnement, accompagnés de caractéristiques techniques de l'appareil : modèle et fabricant, version d'Android, langue et pays, opérateur mobile, type de connexion, fuseau horaire et version de l'app. Google n'en publie pas le contenu détaillé et les traite selon sa propre politique : https://policies.google.com/privacy
 
 ## 9. Contact
 
